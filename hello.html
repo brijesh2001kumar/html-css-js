@@ -3,6 +3,15 @@
 <html lang="en">
   
   <head>
+    <script>
+      let body=document.querySelector("body");
+      document.querySelector("#red").onclick=function(){
+        body.style.bachgroundColor="red"};
+      document.querySelector("#blue").onclick=function(){
+        body.style.bachgroundColor="blue"};
+      document.querySelector("#green").onclick=function(){
+        body.style.bachgroundColor="green"};
+    </script>
     <style>
       img
       {
@@ -23,6 +32,9 @@
   </head>
   
   <body>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
     <img src="image.png" alt="sunset">
     <h1> Welcome to our site </h1>
     <h5> Search your results using wikipedia </h5>
